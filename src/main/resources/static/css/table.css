@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    background-color: #EFF0F7;
+    min-width: 900;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+	min-height: 50px;
+	padding: 20px;
+}
+
+
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid #4c4c4c;
+}
+
+td {
+	background-color: #ffffff;
+}
+
+table {
+	margin: 5px auto;
+	min-width: 800px;
+}
+
+table th {
+	background: #666666;
+	color: #ffffff;
+}
+
+.price, .id {
+	text-align: center;
+}
+
+button {
+	background-color: #666666;
+	color: #ffffff;
+	border: none;
+	width: 150px;
+	cursor: pointer;
+	margin: 3px;
+	padding: 5px;
+}
+
+.btn {
+	text-align: center;
+	width: 100px;
+}
+
+.left {
+	text-align: left;
+}

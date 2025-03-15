@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+nav {
+	margin-top: 5px;
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #4c4c4c;
+}
+
+nav a  {
+	text-decoration: underline;
+}

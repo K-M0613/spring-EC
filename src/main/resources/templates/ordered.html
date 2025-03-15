@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>注文完了</title>
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/ordered.css">
+</head>
+
+<body>
+	<header th:replace="header"></header>
+	<main>
+		<h3 class="thanks">ご注文ありがとうございました。</h3>
+		<p>お客様の注文番号は</p>
+		<h3>
+			<span th:text="${orderNumber}" style="color: red;"></span>
+		</h3>
+		<p>になります。</p>
+	</main>
+</body>
+
+</html>

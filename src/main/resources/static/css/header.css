@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+header {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #4c4c4c;
+	color: #ffffff;
+}
+
+header a {
+	margin-left: 10px;
+}
+
+header div {
+	margin-top: 20px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+header div a {
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}

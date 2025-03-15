@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>商品一覧</title>
+<link rel="stylesheet" type="text/css" href="/css/table.css">
+<link rel="stylesheet" type="text/css" href="/css/header.css">
+<link rel="stylesheet" type="text/css" href="/css/navigation.css">
+</head>
+<body>
+	<header th:replace="header"></header>
+	<nav>
+		<div>
+			<a href="/items">全商品</a>
+			<a th:each="c:${categories}" th:href="@{/items(categoryId=${c.id})}">
+				<span th:text="${c.name}" style="padding-left: 10px;"></span>
+			</a>
+		</div>
+		<div>
+			<a href="/cart" style="text-align: left;">カートを見る</a>
+		</div>
+	</nav>
+	<main>
+		<table>
+			<tr>
+				<th>NO</th>
+				<th>商品名</th>
+				<th>価格</th>
+				<th></th>
+			</tr>
+			<tr th:each="item:${items}">
+				<td th:text="${item.id}" class="id"></td>
+				<td th:text="${item.name}"></td>
+				<td th:text="${T(java.lang.String).format('%,d', item.price)}+'円'" class="price"></td>
+				<td class="btn">
+					<form action="/cart/add" method="post">
+						<input type="hidden" name="itemId" th:value="${item.id}">
+						<button>カートに追加</button>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>

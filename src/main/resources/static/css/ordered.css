@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: #EFF0F7;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #ffffff;
+	border: 1px solid #000;
+}
+
+.thanks {
+	font-size: 30px;
+}
+
+p {
+	font-size: 20px;;
+}

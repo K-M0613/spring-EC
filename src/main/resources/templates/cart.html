@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>カート</title>
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/table.css">
+	<link rel="stylesheet" type="text/css" href="/css/cart.css">
+</head>
+
+<body>
+	<header th:replace="header"></header>
+	<h3>カート商品</h3>
+	<main>
+		<span th:replace="cartItem"></span>
+		<form action="/order">
+			<button>注文する</button>
+		</form>
+	</main>
+</body>
+
+</html>
