@@ -1,39 +1,58 @@
 @charset "UTF-8";
 
 body {
-    background-color: #EFF0F7;
-    min-width: 100%;
-    margin: 0;
-    padding: 0;
+	background-color: #EFF0F7;
+	min-width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 1000px;
 }
+
+/*main {*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: center;*/
+/*	align-items: middle;*/
+/*	align-content: center;*/
+/*}*/
 
 
 header {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 	background-color: #4c4c4c;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	
+	color: #ffffff;
+	height: 90px;
 }
 
 header h1 {
 	color: #ffffff;
-	padding-left: 10px;
+	padding-left: 40px;
 }
 
 h3 {
 	margin-top: 50px;
 }
 
-div {
+.login-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-element {
 	background-color: #ffffff;
 	border: 2px solid #000;
 	height: 200px;
 	width: 500px;
 	text-align: center;
-	padding-top: 20px;
-	position: absolute;
-	top: 27%;
-	left: 37%;
+	align-content: center;
+}
+
+span {
+	margin-top: 10px;
 }
 
 form {
@@ -45,6 +64,7 @@ input {
 	display: inline-block;
 	width: 50%;
 	line-height: 25px;
+	padding-left: 10px;
 }
 
 button {

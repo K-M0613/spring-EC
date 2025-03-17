@@ -11,18 +11,20 @@
 	<header>
 		<h1>サンプルショッピング</h1>
 	</header>
-	<main>
-		<h3 style="text-align: center;">login</h3>
-		<br>
-		<div> 
-			<span th:if="${message}" th:text="${message}" style="color: red;"></span>
-			<form action="/login" method="post">
-				<input type="text" name="name" placeholder="名前">
-				<br>
-				<button>ログイン</button>
-			</form>
-		</div>
-	</main>
+		<main>
+			<h3 style="text-align: center;">login</h3>
+			<br>
+			<div class="login-box">
+				<div class="login-element">
+					<span th:if="${message}" th:text="${message}" style="color: red;"></span>
+					<form action="/login" method="post">
+						<input type="text" name="name" placeholder="名前">
+						<br>
+						<button>ログイン</button>
+					</form>
+				</div>
+			</div>
+		</main>
 </body>
 
 </html>

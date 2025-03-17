@@ -12,38 +12,42 @@
 <body>
 	<header th:replace="header"></header>
 	<main>
-		<h3>ご注文商品</h3>
-		<span th:replace="cartItem"></span>
-		<h3>お客様情報入力</h3>
-		<form action="/order/confirm" method="post">
-			<table>
-				<tr>
-					<th>お名前</th>
-					<td>
-						<input type="text" name="name" style="width: 98%;">
-					</td>
-				</tr>
-				<tr>
-					<th>住所</th>
-					<td>
-						<input type="text" name="address" style="width: 98%;">
-					</td>
-				</tr>
-				<tr>
-					<th>電話番号</th>
-					<td>
-						<input type="text" name="tel" style="width: 98%;">
-					</td>
-				</tr>
-				<tr>
-					<th>e-mail</th>
-					<td>
-						<input type="text" name="email" style="width: 98%;">
-					</td>
-				</tr>
-			</table>
-			<button>確認画面へ</button>
-		</form>
+		<div>
+			<h3>ご注文商品</h3>
+			<span th:replace="cartItem"></span>
+		</div>
+		<div>
+			<h3>お客様情報入力</h3>
+			<form action="/order/confirm" method="post">
+				<table>
+					<tr>
+						<th>お名前</th>
+						<td>
+							<input type="text" name="name" style="width: 98%;">
+						</td>
+					</tr>
+					<tr>
+						<th>住所</th>
+						<td>
+							<input type="text" name="address" style="width: 98%;">
+						</td>
+					</tr>
+					<tr>
+						<th>電話番号</th>
+						<td>
+							<input type="text" name="tel" style="width: 98%;">
+						</td>
+					</tr>
+					<tr>
+						<th>e-mail</th>
+						<td>
+							<input type="text" name="email" style="width: 98%;">
+						</td>
+					</tr>
+				</table>
+				<button class="order-btn">確認画面へ</button>
+			</form>
+		</div>
 	</main>
 </body>
 

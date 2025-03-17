@@ -6,20 +6,34 @@ header {
 	justify-content: space-between;
 	background-color: #4c4c4c;
 	color: #ffffff;
+	height: 90px;
 }
 
-header a {
-	margin-left: 10px;
+h1 {
+	margin-left: 40px;
 }
 
-header div {
-	margin-top: 20px;
+/*header div {*/
+/*	margin-top: 20px;*/
+/*	margin-right: 10px;*/
+/*	text-align: right;*/
+/*}*/
+
+.user-box {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
 	margin-right: 10px;
-	text-align: right;
 }
 
 header div a {
 	text-decoration: underline;
+}
+
+span {
+	margin-bottom: 10px;
 }
 
 a {

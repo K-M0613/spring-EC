@@ -11,12 +11,16 @@
 
 <body>
 	<header th:replace="header"></header>
-	<h3>カート商品</h3>
 	<main>
-		<span th:replace="cartItem"></span>
-		<form action="/order">
-			<button>注文する</button>
-		</form>
+		<div>
+			<h3>カート商品</h3>
+			<div class="spit-fire">
+				<span th:replace="cartItem"></span>
+				<form action="/order">
+					<button class="order-btn">注文する</button>
+				</form>
+			</div>
+		</div>
 	</main>
 </body>
 

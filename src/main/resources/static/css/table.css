@@ -24,7 +24,7 @@ td {
 
 table {
 	margin: 5px auto;
-	min-width: 800px;
+	width: 800px;
 }
 
 table th {
@@ -34,6 +34,26 @@ table th {
 
 .price, .id {
 	text-align: center;
+}
+
+.item-cell {
+	padding-left: 10px;
+}
+
+.item-num {
+	width: 60px;
+}
+
+.item-name {
+	width: 440px;
+}
+
+.item-price {
+	width: 140px;
+}
+
+.cart-btn {
+	width: 160px;
 }
 
 button {
@@ -53,4 +73,8 @@ button {
 
 .left {
 	text-align: left;
+}
+
+.total {
+	padding: 5px 5px 5px 0;
 }
